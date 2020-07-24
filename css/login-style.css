@@ -68,7 +68,8 @@ form.sign-up-form{
     opacity: 0;
  }
 .title{
-    padding: 20px;
+    margin-top: 10px;
+    padding: 10px;
     font-size: 2.2em;
     color:rgb(0,112,218);
 }
@@ -319,6 +320,7 @@ input::placeholder{
 }
 @media (max-width: 570px){
     form{
+        margin: -20px 0 0 0;
         padding: 0 1.5rem;
     }
     .image{
@@ -337,4 +339,9 @@ input::placeholder{
     }
 
 
+}
+@media (max-width:375px){
+    .panel{
+        padding: 1.5rem 8%;
+    }
 }
