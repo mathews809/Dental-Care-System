@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DentalCare System</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header id="header">
+        <a href="#" class="logo">DC System</a>
+        <ul>
+          <li><a href="#home" class="active" onclick="toggle()">Inicio</a></li>
+          <li><a href="#servicios" onclick="toggle()">Servicios</a></li>
+          <li><a href="#nosotros" onclick="toggle()" >Nosotros</a></li>
+          <li><a href="#contactos" onclick="toggle()">Contactos</a></li>
+          <li><a href="#equipo" onclick="toggle()">Equipo</a></li>
+          <li><a href="login.html">Acceder</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <section id="home">
+        <div>
+            <h2 class="h2">Dental Care Systems</h2>
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eum dignissimos iste atque magni cumque repellat architecto doloremque reiciendis, perferendis ducimus beatae quasi soluta optio facere hic! Esse dolore totam numquam accusantium delectus tempora iusto quibusdam. Magni dolorum pariatur autem!</p>
+            <a href="login.html">Registrate Ya!</a>
+        </div>
+        <img src="img/imagen3.jpg" alt="" srcset="">
+    </section>
+        <h3 class="centerH2 h2" id="servicios">Nuestros Servicios</h3> 
+        <div class="body" >
+    <div class="container">         
+        <div class="card">
+            <div class="imgBx" data-text="Citas Claras">
+                <img src="img/service1.png">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Citas Claras</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in iure sapiente dolorum? Beatae ducimus consectetur sunt porro.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx" data-text="En Linea">
+                <img src="img/service3.png">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Todo en Linea</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in iure sapiente dolorum? Beatae ducimus consectetur sunt porro.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx" data-text="Desde Casa">
+                <img src="img/service2.png">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Desde la Comodidad de tu Hogar</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in iure sapiente dolorum? Beatae ducimus consectetur sunt porro.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx"  data-text="Seguridad">
+                <img src="img/service4.png">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Mayor Seguridad de tus Datos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in iure sapiente dolorum? Beatae ducimus consectetur sunt porro.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <section id="nosotros">
+        <div>
+            <h2 class="h2">Sobre Nosotros</h2>
+            <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi explicabo eos! Assumenda vero quibusdam mollitia repudiandae tempora, corporis, eligendi necessitatibus quas sed, placeat aspernatur alias id dolores distinctio nisi delectus porro. Non nam iste excepturi nemo eum amet illum sed doloribus natus repellendus! Quasi architecto voluptates deleniti ducimus a veritatis cupiditate tempora tempore sequi non quia iure, minus accusamus eveniet est commodi quam nobis dolores. Quidem quos ea molestias?</p>
+            
+        </div>
+       
+    </section>
+    <section id="contactos">
+        <div>
+            <h2 class="h2">Contactanos</h2>
+            <p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta enim pariatur iste, molestias placeat inventore voluptatum error fugit, vel libero perspiciatis eos saepe cum! Similique dolor maiores earum impedit corporis porro rerum eum repellendus placeat autem tempora accusantium illo numquam modi ratione soluta distinctio, quis repellat aliquam! Aliquid nemo nisi sit nihil id quasi, dolore facere possimus. Ducimus dolorem necessitatibus rem, ipsam, earum nam praesentium deleniti dolor dolorum eligendi culpa.</p>
+            
+        </div>
+       
+    </section>
+    <section id="equipo">
+        <div>
+            <h2 class="h2">Nuestro Equipo</h2>
+            <p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta enim pariatur iste, molestias placeat inventore voluptatum error fugit, vel libero perspiciatis eos saepe cum! Similique dolor maiores earum impedit corporis porro rerum eum repellendus placeat autem tempora accusantium illo numquam modi ratione soluta distinctio, quis repellat aliquam! Aliquid nemo nisi sit nihil id quasi, dolore facere possimus. Ducimus dolorem necessitatibus rem, ipsam, earum nam praesentium deleniti dolor dolorum eligendi culpa.</p>
+            
+        </div>
+
+       
+    </section>
+    <script type="text/javascript">
+         function toggle(){
+             var header = document.getElementById('header')
+             header.classList.toggle('active')
+         }
+    </script>
+    
+    
+  </body>
+</html>
