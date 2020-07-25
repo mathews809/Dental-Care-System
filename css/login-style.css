@@ -185,6 +185,25 @@ input::placeholder{
     margin: 10px 0;
     transition: .5s;
 }
+.btn1a{
+        border: none;
+        outline: none;
+        border-radius: 49px;
+        cursor: pointer;
+        border: 2px solid #fff;
+        position: relative;
+        top:2px;
+        left: 2px;
+        padding: 8px 60px 6px ;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 10px 10px ;
+        transition: .5s;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
 .btn1.transparent{
     margin: 0;
     background: none;
@@ -194,7 +213,8 @@ input::placeholder{
     font-weight: 600;
     font-size: 0.8rem;
 }
-.btn1:hover{
+.btn1:hover,
+.btn1a:hover{
     background: #fff;
     color: rgb(0,112,218);
 }
@@ -341,7 +361,44 @@ input::placeholder{
 
 }
 @media (max-width:375px){
+    form{
+        margin: -20px 0 0 0;
+        padding: 0 1.5rem;
+    }
     .panel{
         padding: 1.5rem 8%;
     }
+    .content .left-panel{
+        position: relative;
+        top: 0;
+        bottom: 60px;
+    }
+    /* .content .right-panel{
+        position: relative;
+        top: 0;
+        bottom: 60px;
+    } */
+    .container:before{
+        bottom: 68%;
+        left: 50%;
+    }
+    .panel.left-panel .content a{
+        position: relative;
+        top: 20px;
+    }
+    .panel.right-panel .content {
+        position: relative;
+        top: -10px;
+        bottom: 20px;
+    } 
+    .panel.right-panel .content h3{
+        position: relative;
+        top: 10px;
+        font-size: 28px;
+    } 
+    .panel.right-panel .content a{
+        position: relative;
+        top: 20px;
+    } 
+   
 }
