@@ -3,91 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dc: Iniciar secion</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/login-style.css">
-    <script src="https://kit.fontawesome.com/64d58efce2.js" 
-    crossorigin="anonymous"></script>
-    <title>Dc System: Log In</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-  <div class="container">
-      <div class="forms-container">
-   <div class="signin-signup">
-    <form action="" class="sign-in-form">
-        <h2 class="title">Dc Login</h2>
+    <!--Contenedor-->
+    <div class="container">
+   <a href="index.html"><header><img src="img/logo7.png">
+    </header>
+     </a>
+    <h2>Iniciar Sesion</h2>
+
+    <form>
+        <!--Correo-->
         <div class="input-field">
-            <i class="fa fa-envelope"></i>
-            <input type="email" placeholder="Correo" required>
+            <input type="text" name="" id="" required>
+            <label>Correo</label>
         </div>
+        <!--Contraseña-->
         <div class="input-field">
-            <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Clave" required>
+            <input class="pswrd" type="password" name="" id="" required minlength="6" maxlength="9" onkeypress="return isNumberKey(event)"> 
+            <span class="show">SHOW</span>           
+            <label>Contraseña</label>
         </div>
-        <input type="submit" value="Acceder" class="btn solid">
+        <!--Boton de Enviar-->
+        <div class="button">
+        <div class="inner">
+            <button type="submit">Ingresar</button>
+        </div>
+    </div>
     </form>
-    <form action="" class="sign-up-form">
-        <h2 class="title">DC Sign In</h2>
-        <div class="input-field">
-            <i class="fa fa-user"></i>
-            <input type="text" placeholder="Nombre" required>
+         <div class="signup">
+            <a href="">Ha olvidado la Contraseña?</a>
         </div>
-        <div class="input-field">
-            <i class="fa fa-user-o"></i>
-            <input type="text" placeholder="Apellido" required>
-        </div>
-        <div class="input-field">
-            <i class="fa fa-mobile"></i>
-            <input type="tel" placeholder="Telefono" required>
-        </div>
-        <div class="input-field">
-            <i class="fa fa-envelope"></i>
-            <input type="email" placeholder="Correo" required>
-        </div>
-        <div class="input-field">
-            <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Clave" required>
-        </div>
-        <div class="input-field">
-            <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Confirmar Clave" required>
-        </div>
-        <input type="submit" value="Registrar" class="btn solid">
-
-        
-        
-        </form>
-            </div>
-          </div>
-       
-    
+           <div class="signup">
+               No eres miembro?<a href="signup.html">Registrate</a>
+           </div>
+</div>
 
 
-
-      <div class="panels-container">
-          <div class="panel left-panel">
-              <div class="content">
-                  <h3>Nuevo Aqui ?</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit amet placeat?</p>
-                  <button class="btn1 transparent" id="sign-up-btn">Registrate Ya!</button>
-               <a href="index.html" class="btn1a transparent">Inicio</a>
-                  
-              </div>
-
-              <img src="img/log-in.svg" class="image" >
-          </div>
-
-
-          <div class="panel right-panel">
-            <div class="content">
-                <h3> Eres Parte de Nosotros ?</h3>
-                <p>Dale Click a Ingresar</p>
-                <button class="btn1 transparent" id="sign-in-btn">Acceder Ya!</button>
-                <a href="index.html" class="btn1a transparent">Inicio</a>
-            </div>
-
-            <img src="img/sign-in.svg" class="image" >
-        </div>
-      </div>
-  </div>
-  <script src="js/app.js"></script>
+<!-- Script para mostrarla contraseña -->
+<script>
+  var input = document.querySelector('.pswrd');
+  var show = document.querySelector('.show');
+  show.addEventListener('click', active);
+  function active(){
+      if(input.type == "password"){
+          input.type = "text";
+          show.style.color = "rgb(0,112,218)";
+          show.textContent = "HIDE";
+      }else{
+        input.type = "password";
+        show.textContent = "SHOW";
+      }
+  }
+</script>
 </body>
 </html>
