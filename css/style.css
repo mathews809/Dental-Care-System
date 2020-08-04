@@ -75,7 +75,6 @@ section h2 {
 .centerH2 {
   font-size: 2.5rem;
   text-align: center;
- 
 }
 .h2,
 .p {
@@ -196,13 +195,33 @@ section:nth-child(odd) {
   margin-bottom: 5px;
   font-size: 24px;
 }
-/*  Estilos de Contactos*/
+/* Estilo de la seccion de Sobre Nosotros */
+.about-section{
+  position: absolute;
+  top:-100px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-section img{
+  width:600px;
+}
+.about-section h3{
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+.about-section p{
+  font-size: 18px;
+  font-weight: 500;
+  color: #0070da;
+}
+/* Estilo de la seccion de contactos */
 .container-contact {
   position: relative;
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
-  /* background-color: #fafafa; */
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -214,7 +233,7 @@ section:nth-child(odd) {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
- /* z-index: 1;  */
+  /* z-index: 1;  */
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -375,8 +394,8 @@ textarea.input {
   color: #333;
   padding: 1.5rem 0 2rem 0;
 }
-.information{
-  display:flex;
+.information {
+  display: flex;
   color: #0070da;
   margin: 0.7rem 0;
   align-items: center;
@@ -387,18 +406,18 @@ textarea.input {
   width: 28px;
   margin-right: 0.7rem;
 }
-.social-media{
+.social-media {
   padding: 2rem 0 0 0;
 }
-.social-media p{
+.social-media p {
   color: rgb(0, 112, 218);
 }
-.social-icons{
-  display:flex;
+.social-icons {
+  display: flex;
   margin-top: 0.5rem;
 }
-.social-icons a{
-  width:35px;
+.social-icons a {
+  width: 35px;
   height: 35px;
   border-radius: 5px;
   background: linear-gradient(45deg, #0700da, #2488ff);
@@ -406,29 +425,23 @@ textarea.input {
   text-align: center;
   line-height: 35px;
   margin-right: 0.5rem;
-  transition: .3s;
+  transition: 0.3s;
 }
-.social-icons a:hover{
-  transform: scale(1.40);
+.social-icons a:hover {
+  transform: scale(1.4);
   box-shadow: 0 0 8px #fff;
 }
 .contact-info:before {
   content: "";
   position: absolute;
-  width:110px;
+  width: 110px;
   height: 100px;
   border: 22px solid #0070da;
   border-radius: 50%;
   bottom: -77px;
   right: 50px;
-  opacity:0.3;
+  opacity: 0.3;
 }
-
-
-
-
-
-
 
 /* Responsive de la Pagina */
 @media (max-width: 992px) {
@@ -441,7 +454,7 @@ textarea.input {
   }
   section img {
     margin: 50px 0 0;
-    width: 100%;
+    width: 500px;
   }
 
   header ul {
@@ -515,28 +528,33 @@ textarea.input {
     width: 400px;
   }
 }
-@media (max-width:850px){
-  .form{
+.about-section img{
+  margin: 50px 0 0;
+  width: 500px;
+}
+
+}
+@media (max-width: 850px) {
+  .form {
     grid-template-columns: 1fr;
   }
-  .contact-info::before{
+  .contact-info::before {
     bottom: initial;
     top: -75px;
     right: 25px;
     transform: scale(0.95);
   }
-  .contact-form:before{
-    top:-13px;
+  .contact-form:before {
+    top: -13px;
     left: initial;
     right: 70px;
   }
-  .text{
+  .text {
     margin: 1rem 0 1.5rem 0;
   }
-  .social-media{
+  .social-media {
     padding: 1.5rem 0 0 0;
   }
-
 }
 @media (max-width: 768px) {
   .container .card {
@@ -566,38 +584,44 @@ textarea.input {
     border-radius: 0 0px 20px 20px;
   }
 }
-@media(max-width: 480px){
-  .container-contact{
+@media (max-width: 480px) {
+  .container-contact {
     padding: 1.5rem;
   }
-  .contact-info:before{
+  .contact-info:before {
     display: none;
   }
   form,
-  .contact-info{
+  .contact-info {
     padding: 1.7rem 1.6rem;
   }
-  .text, .information, .social-media p{
-         font-size: 0.8rem;
+  .text,
+  .information,
+  .social-media p {
+    font-size: 0.8rem;
   }
-  .title-h3{
+  .title-h3 {
     font-size: 1.15rem;
   }
-  .social-icons a{
+  .social-icons a {
     width: 30px;
     height: 30px;
     line-height: 30px;
   }
-  .icon{
-    width:23px;
+  .icon {
+    width: 23px;
   }
-  .input{
+  .input {
     padding: 0.45rem 1.2rem;
   }
-  .btn{
+  .btn {
     padding: 0.45rem 1.2rem;
+  }
+  .about-section img{
+    width: 100%;
   }
 }
+
 @media (max-width: 375px) {
   header .logo {
     position: relative;
@@ -605,5 +629,8 @@ textarea.input {
     top: 0;
     right: 20px;
     font-weight: 300;
+  }
+  .about-section img{
+    width: 100%;
   }
 }

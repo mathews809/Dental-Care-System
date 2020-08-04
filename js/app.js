@@ -17,3 +17,8 @@ inputs.forEach((input) => {
     input.addEventListener("focus", focusFunc);
     input.addEventListener("blur", blurFunc);
 });
+
+function toggle(){
+    var header = document.getElementById('header');
+    header.classList.toggle('active');
+}
