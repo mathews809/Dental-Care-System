@@ -16,12 +16,12 @@ header {
   padding: 0 100px;
   display: flex;
   justify-content: space-between;
-  background: #fff;
+  background: #2488ff;
   align-items: center;
   z-index: 1000;
 }
 header .logo {
-  color: rgb(0, 112, 218);
+  color: #fff;
   font-size: 30px;
   text-decoration: none;
   font-weight: 400;
@@ -38,7 +38,7 @@ header ul li a {
   position: relative;
   text-decoration: none;
   padding: 5px 10px;
-  color: rgb(0, 112, 218);
+  color: #fff;
   display: inline-block;
   cursor: pointer;
 }
@@ -442,6 +442,120 @@ textarea.input {
   right: 50px;
   opacity: 0.3;
 }
+/* Estilos del footer */
+footer{
+  background:#2488ff;
+  padding: 90px 0;
+}
+.footer-container{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+.h1-footer{
+  font-size: 26px;
+   margin-bottom: 40px; 
+  color: #fff;
+  font-weight: 400;
+}
+.social-media-footer{
+  margin: 10px 0;
+}
+.social-media-footer a{
+  color: #fff;
+  margin-right: 25px;
+  font-size:25px;
+  text-decoration: none;
+  transition: .3s linear;
+}
+.social-media-footer a:hover{
+  color: #0700da;
+}
+.right-col h1{
+  position: relative;
+  font-size: 26px;
+  color: #fff;
+
+}
+.left-col p{
+  color:#fff;
+}
+.right-col p{
+  margin: 10px 0;
+  color: #fff;
+}
+.border-footer{
+  position: relative;
+  width: 100px;
+  height: 4px;
+  background: #fff;
+
+}
+.newsletter-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.textb{
+  flex: 1;
+  padding: 18px 40px;
+  font-size: 16px;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  font-weight: 500;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  min-width: 260px;
+  position: relative;
+  right: 35px;
+  
+}
+.textb::placeholder{
+  color: #fff;
+}
+.btn-footer{
+  padding: 20px 40px;
+  position: relative;
+  right: 35px;
+  font-size: 16px;
+  color:#2488ff;
+  background:#fff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  cursor: pointer;
+  transition: .3s ;
+}
+.btn-footer:hover{
+  padding: 18px 40px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+@media screen and (max-width:960px){
+  .footer-container{
+    max-width: 600px;
+  }
+  .right-col{
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .left-col{
+    width: 100%;
+    text-align: center;
+  }
+}
 
 /* Responsive de la Pagina */
 @media (max-width: 992px) {
@@ -467,9 +581,9 @@ textarea.input {
     text-align: center;
     overflow: auto;
     transition: 0.5s;
-    background: #fff;
+    background:#2488ff;
     flex-direction: column;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(-100%);
   }
   header.active ul {
@@ -480,7 +594,7 @@ textarea.input {
   header ul li a {
     margin: 5px 0;
     font-size: 24px;
-    color: rgb(0, 112, 218);
+    color: #fff;
   }
   .toggle {
     display: block;
@@ -495,9 +609,9 @@ textarea.input {
     top: 4px;
     width: 100%;
     height: 2px;
-    background: rgb(0, 112, 218);
+    background:#fff;
     z-index: 1;
-    box-shadow: 0 10px 0 rgb(0, 112, 218);
+    box-shadow: 0 10px 0 #fff;
     transition: 0.5s;
   }
   .toggle:after {
@@ -506,7 +620,7 @@ textarea.input {
     bottom: 4px;
     width: 100%;
     height: 2px;
-    background: rgb(0, 112, 218);
+    background:#fff;
     z-index: 1;
     transition: 0.5s;
   }
@@ -527,13 +641,13 @@ textarea.input {
   .container .card {
     width: 400px;
   }
-}
-.about-section img{
-  margin: 50px 0 0;
-  width: 500px;
+  .about-section img{
+    margin: 50px 0 0;
+    width: 500px;
+  }  
 }
 
-}
+
 @media (max-width: 850px) {
   .form {
     grid-template-columns: 1fr;
@@ -582,6 +696,30 @@ textarea.input {
     position: relative;
     width: 100%;
     border-radius: 0 0px 20px 20px;
+  }
+}
+@media screen and (max-width:700px){
+  .right-col{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .border-footer{
+    position: relative;
+    left:208px;
+  }
+  .newsletter-form{
+    position: relative;
+    left:35px;
+  }
+  .textb{
+    border-radius: 30px;
+  }
+  .btn-footer{
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 30px;
   }
 }
 @media (max-width: 480px) {
@@ -633,4 +771,15 @@ textarea.input {
   .about-section img{
     width: 100%;
   }
+  .newsletter-form .textb, 
+  .newsletter-form .btn-footer{
+    padding: 10px;
+    margin-left: 13px;
+    width: 100%;
+  }
+  .textb{
+    font-size:14px
+  }
+  
 }
+

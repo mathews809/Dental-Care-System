@@ -70,7 +70,8 @@ prevBtnFourth.addEventListener("click", function (){
     current -= 1;
     
 });
-// PAra mostrar la clave
+
+// Para mostrar la clave
 var input = document.querySelector('.pswrd');
 var show = document.querySelector('.show');
 show.addEventListener('click', active);

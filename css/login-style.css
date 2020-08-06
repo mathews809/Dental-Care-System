@@ -126,6 +126,7 @@ form .button{
 .signup a:hover{
     text-decoration: underline;
 }
+/* Responsive de la pagina */
 @media (max-width:414px){
     body{
       background:#fff;
